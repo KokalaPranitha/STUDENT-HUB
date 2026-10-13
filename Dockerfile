@@ -24,7 +24,7 @@ RUN mvn clean package -DskipTests
 # 3. Production Java 21 Runtime Container
 FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
-COPY --from=backend-builder /app/backend/target/*.jar app.jar
+COPY --from=backend-builder /app/backend/target/app.jar app.jar
 EXPOSE 8080
 ENV PORT=8080
 ENTRYPOINT ["java", "-jar", "app.jar"]
