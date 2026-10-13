@@ -58,8 +58,8 @@ CREATE TABLE students (
 -- (BCrypt hash for 'password123': $2a$10$7Zk49.h1Vq5oD8Qz2e7D..0o8z76wz9yR09Z5bS3rZ7sB5N3m9h8y or standard bcrypt)
 -- ------------------------------------------------------------------------------
 INSERT INTO users (username, email, password, full_name, role) VALUES
-('admin', 'admin@studenthub.edu', '$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd00DMxs.AQubh4a', 'Administrator', 'ROLE_ADMIN'),
-('sarah_connor', 'sarah.c@studenthub.edu', '$2a$10$8.UnVuG9HHgffUDAlk8qfOuVGkqRzgVymGe07xd00DMxs.AQubh4a', 'Dr. Sarah Connor', 'ROLE_STAFF');
+('admin', 'admin@studenthub.edu', '$2a$10$Mud6d7srXZxymKRP1V0yMeQ10virUXsRPLmm4z.CrWBxba5e11tEG', 'Administrator', 'ROLE_ADMIN'),
+('sarah_connor', 'sarah.c@studenthub.edu', '$2a$10$Mud6d7srXZxymKRP1V0yMeQ10virUXsRPLmm4z.CrWBxba5e11tEG', 'Dr. Sarah Connor', 'ROLE_STAFF');
 
 -- Note: The bcrypt hash above represents 'password123'.
 
