@@ -3,7 +3,7 @@
  * Communicates with Spring Boot REST Backend with JWT Authentication
  */
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || '/api';
 
 export const getAuthToken = () => localStorage.getItem('studenthub_token');
 export const setAuthToken = (token) => {
